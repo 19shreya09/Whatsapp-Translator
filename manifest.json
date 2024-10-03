@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Translation Extension",
+    "version": "1.0",
+    "description": "Translate WhatsApp messages in real-time",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+      
+    }
+  }
+  
